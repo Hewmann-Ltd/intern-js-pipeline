@@ -1,6 +1,6 @@
 # Nightly Builds 2022 Summer Intern Project
 
-[![Github pages](https://github.com/mspnp/intern-js-pipeline/actions/workflows/github-pages.yml/badge.svg)](https://github.com/mspnp/intern-js-pipeline/actions/workflows/github-pages.yml)
+[![Github pages](https://github.com/hewmann-ltd/intern-js-pipeline/actions/workflows/github-pages.yml/badge.svg)](https://github.com/hewmann-ltd/intern-js-pipeline/actions/workflows/github-pages.yml)
 
 Documentation and the code samples that are apart of them play an important role in a developer's experience. Code samples are the starting point for many developers and it's critical that they work in order for developers to gain a deeper understanding of the documentation as well as the technology itself.
 
@@ -23,4 +23,4 @@ npm install
 npm start
 ```
 
-For more detailed instructions on how to set up the test harness and dashboard please see [Nightly Integration Tests Dashboard Documentation](https://mspnp.github.io/intern-js-pipeline/docs/intro)
+For more detailed instructions on how to set up the test harness and dashboard please see [Nightly Integration Tests Dashboard Documentation](https://hewmann-ltd.github.io/intern-js-pipeline/docs/intro)

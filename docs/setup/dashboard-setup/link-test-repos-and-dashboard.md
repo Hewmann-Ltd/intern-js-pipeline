@@ -36,7 +36,7 @@ Modify Playwright github actions in the test repositories to notify and update d
           if: always()
           uses: peaceiris/actions-gh-pages@v3.7.3
           with:
-            external_repository: mspnp/intern-js-pipeline
+            external_repository: hewmann-ltd/intern-js-pipeline
             publish_branch: gh-pages
             personal_token: ${{ secrets.PAT_TOKEN }}
             publish_dir: ${{steps.download.outputs.download-path}}
@@ -62,7 +62,7 @@ Modify Playwright github actions in the test repositories to notify and update d
             env:
               GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
             run: |
-              gh api repos/mspnp/intern-js-pipeline/dispatches \
+              gh api repos/hewmann-ltd/intern-js-pipeline/dispatches \
                   --raw-field event_type=rebuild-site
     ```
 
@@ -129,7 +129,7 @@ Modify Playwright github actions in the test repositories to notify and update d
           if: always()
           uses: peaceiris/actions-gh-pages@v3.7.3
           with:
-            external_repository: mspnp/intern-js-pipeline
+            external_repository: hewmann-ltd/intern-js-pipeline
             publish_branch: gh-pages
             personal_token: ${{ secrets.PAT_TOKEN }}
             publish_dir: ${{steps.download.outputs.download-path}}
@@ -155,12 +155,12 @@ Modify Playwright github actions in the test repositories to notify and update d
             env:
               GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
             run: |
-              gh api repos/mspnp/intern-js-pipeline/dispatches \
+              gh api repos/hewmann-ltd/intern-js-pipeline/dispatches \
                   --raw-field event_type=rebuild-site
     ```
 
       This allows the `test` job to store the Playwright artifact. `storeReports` then pushes the Playwright artifact to a folder in the dashboard's `gh_pages`. Lastly, `notify-dashboard` sends a trigger to the dashboard notifying it to rebuild.
 
-  4. Change the value of `external_repository` under the `storeReports` job from `mspnp/intern-js-pipeline` to the dashboard's organization and repository name
-  5. In the `notify-dashboard` job, replace `mspnp/intern-js-pipeline` in `repos/mspnp/intern-js-pipeline/dispatches` with the dashboard's organization and repository name
+  4. Change the value of `external_repository` under the `storeReports` job from `hewmann-ltd/intern-js-pipeline` to the dashboard's organization and repository name
+  5. In the `notify-dashboard` job, replace `hewmann-ltd/intern-js-pipeline` in `repos/hewmann-ltd/intern-js-pipeline/dispatches` with the dashboard's organization and repository name
   6. Triggering the playwright Github action should now cause the dashboard's rebuild workflow to execute

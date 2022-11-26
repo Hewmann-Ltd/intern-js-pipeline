@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Nightly Integration Tests Dashboard',
-  url: 'https://mspnp.github.io',
+  url: 'https://hewmann-ltd.github.io',
   baseUrl: '/intern-js-pipeline/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -15,7 +15,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'mspnp', // Usually your GitHub org/user name.
+  organizationName: 'hewmann-ltd', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   // Even if you don't use internalization, you can use this field to set useful
@@ -69,7 +69,7 @@ const config = {
             label: 'Documentation',
           },
           {
-            href: 'https://github.com/mspnp/intern-js-pipeline',
+            href: 'https://github.com/hewmann-ltd/intern-js-pipeline',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
